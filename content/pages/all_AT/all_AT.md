@@ -1,5 +1,7 @@
 title: All Astrophysical Transients
 
+##Year 1##
+
 [sector01]({filename}../sector01/sector01.md)
 
 [sector02]({filename}../sector02/sector02.md)
@@ -25,4 +27,10 @@ title: All Astrophysical Transients
 [sector12]({filename}../sector12/sector12.md)
 
 [sector13]({filename}../sector13/sector13.md)
+
+## Year 2 ##
+
+[sector14]({filename}../sector14/sector14.md)
+
+[sector15]({filename}../sector15/sector15.md)
 

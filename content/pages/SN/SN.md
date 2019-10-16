@@ -1,5 +1,7 @@
 title: Supernovae
 
+## Year 1 ##
+
 [SN sector01]({filename}../sn_sector01/sn_sector01.md)
 
 [SN sector02]({filename}../sn_sector02/sn_sector02.md)
@@ -25,4 +27,10 @@ title: Supernovae
 [SN sector12]({filename}../sn_sector12/sn_sector12.md)
 
 [SN sector13]({filename}../sn_sector13/sn_sector13.md)
+
+## Year 2 ##
+
+[SN sector14]({filename}../sn_sector14/sn_sector14.md)
+
+[SN sector15]({filename}../sn_sector15/sn_sector15.md)
 
