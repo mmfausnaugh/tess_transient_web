@@ -1,4 +1,5 @@
-title: sector01 supernovae
+title: sector01 supernovae (7 total)
+slug: sector01-supernovae
 status: hidden
 ![2018emt]({filename}../../images/sector01/lc_2018emt_cleaned.png)
 ![2018evo]({filename}../../images/sector01/lc_2018evo_cleaned.png)

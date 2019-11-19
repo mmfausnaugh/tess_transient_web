@@ -1,4 +1,5 @@
-title: sector02 supernovae
+title: sector02 supernovae (6 total)
+slug: sector02-supernovae
 status: hidden
 ![2018fub]({filename}../../images/sector02/lc_2018fub_cleaned.png)
 ![2018fvi]({filename}../../images/sector02/lc_2018fvi_cleaned.png)

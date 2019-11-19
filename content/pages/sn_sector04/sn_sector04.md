@@ -1,4 +1,5 @@
-title: sector04 supernovae
+title: sector04 supernovae (10 total)
+slug: sector04-supernovae
 status: hidden
 ![2018hkx]({filename}../../images/sector04/lc_2018hkx_cleaned.png)
 ![2018hzh]({filename}../../images/sector04/lc_2018hzh_cleaned.png)

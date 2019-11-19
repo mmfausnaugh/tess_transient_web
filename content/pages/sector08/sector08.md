@@ -1,4 +1,5 @@
-title: all transients in sector08
+title: all transients in sector08 (27 total)
+slug: sector08-all-transients
 status: hidden
 ![2019bcp]({filename}../../images/sector08/lc_2019bcp_cleaned.png)
 ![2019auk]({filename}../../images/sector08/lc_2019auk_cleaned.png)

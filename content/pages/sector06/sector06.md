@@ -1,4 +1,5 @@
-title: all transients in sector06
+title: all transients in sector06 (38 total)
+slug: sector06-all-transients
 status: hidden
 ![2019lo]({filename}../../images/sector06/lc_2019lo_cleaned.png)
 ![2018kpc]({filename}../../images/sector06/lc_2018kpc_cleaned.png)

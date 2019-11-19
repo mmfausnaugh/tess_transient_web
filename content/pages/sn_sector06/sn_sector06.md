@@ -1,4 +1,5 @@
-title: sector06 supernovae
+title: sector06 supernovae (6 total)
+slug: sector06-supernovae
 status: hidden
 ![2018koy]({filename}../../images/sector06/lc_2018koy_cleaned.png)
 ![2018lla]({filename}../../images/sector06/lc_2018lla_cleaned.png)

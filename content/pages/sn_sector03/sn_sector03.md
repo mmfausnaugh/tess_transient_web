@@ -1,4 +1,5 @@
-title: sector03 supernovae
+title: sector03 supernovae (10 total)
+slug: sector03-supernovae
 status: hidden
 ![2018hka]({filename}../../images/sector03/lc_2018hka_cleaned.png)
 ![2018hpu]({filename}../../images/sector03/lc_2018hpu_cleaned.png)

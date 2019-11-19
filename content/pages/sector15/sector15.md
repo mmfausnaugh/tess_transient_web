@@ -1,4 +1,5 @@
-title: all transients in sector15
+title: all transients in sector15 (87 total)
+slug: sector15-all-transients
 status: hidden
 ![2019pqv]({filename}../../images/sector15/lc_2019pqv_cleaned.png)
 ![2019oqc]({filename}../../images/sector15/lc_2019oqc_cleaned.png)

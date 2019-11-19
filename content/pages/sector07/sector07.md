@@ -1,4 +1,5 @@
-title: all transients in sector07
+title: all transients in sector07 (30 total)
+slug: sector07-all-transients
 status: hidden
 ![2019aby]({filename}../../images/sector07/lc_2019aby_cleaned.png)
 ![2019pm]({filename}../../images/sector07/lc_2019pm_cleaned.png)

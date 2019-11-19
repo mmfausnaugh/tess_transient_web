@@ -1,4 +1,5 @@
-title: all transients in sector10
+title: all transients in sector10 (42 total)
+slug: sector10-all-transients
 status: hidden
 ![2019cqk]({filename}../../images/sector10/lc_2019cqk_cleaned.png)
 ![2019con]({filename}../../images/sector10/lc_2019con_cleaned.png)

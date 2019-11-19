@@ -1,4 +1,5 @@
-title: all transients in sector14
+title: all transients in sector14 (84 total)
+slug: sector14-all-transients
 status: hidden
 ![2019men]({filename}../../images/sector14/lc_2019men_cleaned.png)
 ![2019nfv]({filename}../../images/sector14/lc_2019nfv_cleaned.png)

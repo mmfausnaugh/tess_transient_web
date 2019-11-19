@@ -13,9 +13,8 @@ def make_sector_page(image_path):
 
     outfile = suse+'.md'
 
-    template='title: {}\nstatus: hidden\n'.format('all transients in ' + suse)
-
-
+    head_template='title: {sn} ({ntotal} total)\nslug: {slug}\nstatus: hidden\n'
+    template = ''
     images = glob.glob(image_path + '/*')
 
 
@@ -32,6 +31,8 @@ def make_sector_page(image_path):
         N += 1
 
     #print(template)
+    template = head_template.format(sn='all transients in ' + suse,ntotal=N,slug = suse + '-all-transients') + template
+    print(template)
     with open(os.path.join('content/pages',suse,outfile),'w') as fout:
         fout.write(template)
 

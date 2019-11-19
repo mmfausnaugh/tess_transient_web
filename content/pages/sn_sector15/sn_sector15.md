@@ -1,4 +1,5 @@
-title: sector15 supernovae
+title: sector15 supernovae (11 total)
+slug: sector15-supernovae
 status: hidden
 ![2019nvm]({filename}../../images/sector15/lc_2019nvm_cleaned.png)
 ![2019pny]({filename}../../images/sector15/lc_2019pny_cleaned.png)

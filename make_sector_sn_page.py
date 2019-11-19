@@ -14,9 +14,9 @@ def make_sector_sn_page(image_path):
 
     outfile = 'sn_' + suse+'.md'
 
-    template='title: {}\nstatus: hidden\n'.format(suse+ ' supernovae')
-
-
+    head_template='title: {sn} ({ntotal} total)\nslug: {slug}\nstatus: hidden\n'
+    template = ''
+    
     images = glob.glob(image_path + '/*')
 
 
@@ -35,7 +35,7 @@ def make_sector_sn_page(image_path):
             template += strtemplate.format(obj, outpath)
             N += 1
 
-    #print(template)
+    template = head_template.format(sn=suse+ ' supernovae', ntotal=N,slug = suse+'-supernovae') + template
     with open(os.path.join(dout,outfile),'w') as fout:
         fout.write(template)
     return N

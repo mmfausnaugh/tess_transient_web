@@ -1,4 +1,5 @@
-title: sector12 supernovae
+title: sector12 supernovae (4 total)
+slug: sector12-supernovae
 status: hidden
 ![2019gak]({filename}../../images/sector12/lc_2019gak_cleaned.png)
 ![2019gvp]({filename}../../images/sector12/lc_2019gvp_cleaned.png)

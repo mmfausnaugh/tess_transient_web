@@ -1,4 +1,5 @@
-title: all transients in sector12
+title: all transients in sector12 (31 total)
+slug: sector12-all-transients
 status: hidden
 ![2019hnp]({filename}../../images/sector12/lc_2019hnp_cleaned.png)
 ![2019gwq]({filename}../../images/sector12/lc_2019gwq_cleaned.png)

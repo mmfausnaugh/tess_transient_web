@@ -1,4 +1,5 @@
-title: sector05 supernovae
+title: sector05 supernovae (6 total)
+slug: sector05-supernovae
 status: hidden
 ![2018ioa]({filename}../../images/sector05/lc_2018ioa_cleaned.png)
 ![2018jeb]({filename}../../images/sector05/lc_2018jeb_cleaned.png)

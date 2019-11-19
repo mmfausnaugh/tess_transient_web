@@ -1,4 +1,5 @@
-title: all transients in sector02
+title: all transients in sector02 (26 total)
+slug: sector02-all-transients
 status: hidden
 ![2018fub]({filename}../../images/sector02/lc_2018fub_cleaned.png)
 ![2018gfj]({filename}../../images/sector02/lc_2018gfj_cleaned.png)

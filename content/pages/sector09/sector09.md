@@ -1,4 +1,5 @@
-title: all transients in sector09
+title: all transients in sector09 (26 total)
+slug: sector09-all-transients
 status: hidden
 ![2019bql]({filename}../../images/sector09/lc_2019bql_cleaned.png)
 ![2019cml]({filename}../../images/sector09/lc_2019cml_cleaned.png)
