@@ -1,4 +1,4 @@
-title: sector14 supernovae (8 total)
+title: sector14 supernovae (7 total)
 slug: sector14-supernovae
 status: hidden
 ![2019lqo]({filename}../../images/sector14/lc_2019lqo_cleaned.png)
@@ -8,4 +8,3 @@ status: hidden
 ![2019mtz]({filename}../../images/sector14/lc_2019mtz_cleaned.png)
 ![2019mrg]({filename}../../images/sector14/lc_2019mrg_cleaned.png)
 ![2019mvj]({filename}../../images/sector14/lc_2019mvj_cleaned.png)
-![2019mbi]({filename}../../images/sector14/lc_2019mbi_cleaned.png)
