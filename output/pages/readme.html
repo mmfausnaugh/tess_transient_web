@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>README</title>
+        <link rel="stylesheet" href="../theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">TessTransients </a></h1>
+                <nav><ul>
+    
+                        <li><a href="../pages/all-astrophysical-transients.html">All Astrophysical Transients  (9697 total)</a></li>
+    
+                        <li><a href="../pages/supernovae.html">Supernovae (1229 total)</a></li>
+    
+                        <li class="active"><a href="../pages/readme.html">README</a></li>
+    
+                        <li><a href="../pages/lc-bulk.html">Bulk Downloads</a></li>
+    
+                        <li><a href="../pages/transient-table.html">Transient Table</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">README</h1>
+    
+    <h1>TESS Transients</h1>
+<p>This webpage hosts TESS light curve data for transients reported to
+the Transient Name Server (<a href="https://www.wis-tns.org/">wis-tns.org</a>)
+that were also observed in TESS full frame images.</p>
+<p>As of September 2022, TESS full frame images (FFIs) are released every
+seven days as a High Level Science Product
+(<a href="https://archive.stsci.edu/hlsp/tica">TICA</a>) on the
+<a href="https://archive.stsci.edu/">MAST</a>. To capitalize on the rapid
+release of data, we are extracting light curves for transients
+reproted to TNS every 7 days and posting reduced data products here.</p>
+<p>Only transients discovered in the TESS field of view while TESS was
+observing are presented. We plan to add prediscovery light curves in
+the future.  A subset of confirmed supernovae per sector is also
+available.</p>
+<h2>How to get the data</h2>
+<p>Light curves are organized by sector. For a given sector, you can see
+all the light curves by navigating to that sector's webpage.</p>
+<p>Above each figure is a link to a text file with the light curve data.</p>
+<p>To find a specific transient, you need to know which sector it was
+observed in. You can use a tool like
+<a href="https://github.com/christopherburke/tess-point">tess-point</a> to find
+which sector a given transient was observed in based on its RA and Dec.</p>
+<p>There is also an API to download individual light curves, for example
+<code>wget
+https://tess.mit.edu/public/tesstransients/light_curves/lc_2022sfe_cleaned</code>. In
+this case, you only need to know the IAU designation of the transient
+(replace "2022sfe" with the IAU designation). A GET request returns
+the data as a string.</p>
+<p>For bulk downloads, you may prefer to visit <a href="../pages/lc-bulk.html">the bulk
+downloads page</a>. However, the data
+are also under version contol through <a href="https://github.com/mmfausnaugh/lc_bulk">this github
+repo</a>, which you can use to
+access older versions of the data and/or keep local copies synced with
+the most up-to-date version.</p>
+<h2>Light Curve Files</h2>
+<p>Light curves are saved as text files, with 10 columns and two header
+lines. The header lines start with the <code>#</code> character.</p>
+<h3>Header</h3>
+<ul>
+<li>
+<p>The first line is labeld "reference_flux:" and gives the
+flux calibration offset measured from the reference image in units of
+counts per second (see <a href="#flux-calibration">Flux Calibration</a>
+below). This number can be subtracted from the <code>cts_per_s</code> column to
+get the original differential light curve.</p>
+</li>
+<li>
+<p>The second line gives
+the labels for the columns. Many libraries can use this line to put
+names/labels/tags on the data structure. For example, with <code>numpy</code> you
+can do <code>d = np.genfromtext('lc_2022sfe_cleaned',skip_header=1,
+names=True)</code> and you will be able to access the timestamps and flux
+light curve with <code>d['BTJD']</code>, <code>d['cts_per_s']</code>, etc. (The
+<code>skip_header=1</code> is necessary to ignore the reference_flux line.)</p>
+</li>
+</ul>
+<h3>Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BTJD</code></td>
+<td>Barycentric TESS Julian Date. Corrected for light travel time to solar system barycenter, based on TNS coordinates. TESS Julian date is JD - 2457000.</td>
+</tr>
+<tr>
+<td><code>TJD</code></td>
+<td>TESS Julian date, equal to JD - 2457000. The barycenter correction is given by <code>BTJD - TJD</code>. The time system is TDB, but at the position of the TESS spacecraft (and therefore differs from geocentric TDB by a small light travel time).</td>
+</tr>
+<tr>
+<td><code>cts_per_s</code></td>
+<td>Flux light curve in counts per second (photoelectrons per second).</td>
+</tr>
+<tr>
+<td><code>e_cts_per_s</code></td>
+<td>Uncertainty in <code>cts_per_s</code> (1-sigma).</td>
+</tr>
+<tr>
+<td><code>mag</code></td>
+<td>Light curve in TESS magnitudes (see <a href="#flux-calibration">Flux Calibration</a>).</td>
+</tr>
+<tr>
+<td><code>e_mag</code></td>
+<td>Uncertainty in <code>mag</code> (1-sigma). A value of <code>99.9</code> marks a 3-sigma upper limit.</td>
+</tr>
+<tr>
+<td><code>bkg</code></td>
+<td>Local background in differential counts.</td>
+</tr>
+<tr>
+<td><code>bkg_model</code></td>
+<td>Model of potential systematic errors from the background correction. In some cases, <code>cts_per_s - bkg_model</code> is a more reliable measurement of the transient light curve. See <a href="#background-model">Background Model</a> for details.</td>
+</tr>
+<tr>
+<td><code>bkg2</code></td>
+<td>Residual background in the photometric aperture. These data points are used to derive <code>bkg_model</code> (see <a href="#background-model">Background Model</a>), which allows the user to experiment with their own correction model.</td>
+</tr>
+<tr>
+<td><code>e_bkg2</code></td>
+<td>Uncertainty in <code>bkg2</code> (1-sigma).</td>
+</tr>
+</tbody>
+</table>
+<h2>Image Processing and Light Curves</h2>
+<p>We use image subtraction and forced PSF photometry to produce the
+light curves. We are using a slightly customized version of the <a href="http://www2.iap.fr/users/alard/package.html">ISIS
+</a> software package.</p>
+<p>For image subtraction, we build a reference image from 20 images with
+low backgrounds. The reference image is essentially a clipped
+median. Starting in 2022 September, the 20 images are from the first 7
+days of a TESS observing sector, because this time period coresponds
+to the first downlink of TESS data in each sector. Image subtraction
+is performed every 7 days, and begins as soon as the FFIs are publicly
+available at MAST.</p>
+<p>We use the coordinates reported to TNS for forced photometry on each
+transient. We fit models of the pixel-response function (<a href="https://archive.stsci.edu/missions/tess/models/prf_fitsfiles/">available on
+MAST</a>)
+to the differential flux of the transient in each subtracted
+image. Uncertainties are estimated from photon statistics (source +
+background) in the original calibrated image. There is evidence that
+these uncertainties are underestimated by a factor of 1.2 to 2.0,
+depending on the brightness of the source and the surroudning scene.</p>
+<p>More details are in <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908...51F/abstract">Fausnaugh et
+al. 2021</a>
+and <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...956..108F/abstract">Fausnaugh et al. 2023</a>.</p>
+<h2>Flux Calibration</h2>
+<p>To convert a differential flux light curve (delta-counts per second
+from subtracted images) to a flux-calibrated light curve (magnitudes),
+we estimate the flux of the source in the reference image. The flux in
+the reference image is added as a fixed offset to the differential
+light curve to obtain a flux light curve in units of counts per
+second. This flux light curve is given in the <code>cts_per_s</code> column in the
+light curve files. The reference image flux is given in the file
+headers. To convert to magnitudes, we use the formula in the TESS
+instrument handbook, <code>-2.5log10(cts_per_s) + 20.44</code>. The zeropoint has
+an uncertainty of 0.05 mag.</p>
+<p>The advantage of this approach is that the magnitude units are easy to
+understand, and can be easily converted to physical units: (2416
+Jy)*10^(-0.4*Tmag). This formula uses the Vega-mag zeropoint for
+Cousins I-band, which the TESS photometric system is defined to match.</p>
+<p>There are two major disadvantages with this approach.</p>
+<p>First, absolute photometry in TESS images is very
+uncertain. Uncertainty in the reference image flux is typically 20%,
+and can be greater than 100% for faint sources at 18th magnitude and
+fainter.</p>
+<p>The main issue is that it is difficult to estimate the correct
+background level due to the the large TESS pixels and high stellar
+density. There is evidence that background corrections estimated by
+traditional techniques tend to be overestimate, resulting in
+underestimated source fluxes. For example, the TESS mission pipeline
+applies an ad hoc correction for overestimated backgrounds (described
+in section 4.2 of <a href="https://archive.stsci.edu/missions/tess/doc/tess_drn/tess_sector_27_drn38_v02.pdf">this data release note
+document</a>).
+Crowding from nearby stars that contaminate the photometric aperture
+also affects the flux calibration. We iteratively fit models of the
+PSF to the reference image in the vicinity of the transient to help
+mitigate crowding. However, this procedure is also highly uncertain
+and contributes to the large uncertainty in the reference image flux.</p>
+<p>The second disadvantage of our flux calibration procedure is that it
+includes host galaxy flux in the light curve of extragalactic
+transients. For example, bright supernova may appear to peak at 13th
+or 14th TESS magnitude, but only because the integrated host galaxy
+light dominates the flux in the reference image.</p>
+<p>For these cases, users should identify the light curve baseline and
+shift the light curve so that the baseline is forced to zero flux. We
+have chosen not to do this because identifying a suitable baseline is
+not always obvious, and may not be desirable for CVs, stellar flares,
+or unusual variability from other sources.</p>
+<p>Users can also recover the original differential light curve by
+subtracting the <code>reference_flux</code> value in the light curve file
+headers from the <code>cts_per_s</code> column.</p>
+<p>Lastly, users can calibrate the TESS <code>cts_per_s</code> light curve to match
+a light curve in physical units (such as from ASAS-SN, ATLAS, or ZTF)
+by fitting for a shift and scale factor. The TESS filter spans 600 nm
+to 1,000 nm, and so there may be non-negligble color terms when
+comparing to light cures in other filters.</p>
+<h2>Upper limits</h2>
+<p>When converting to magnitudes, we only use data points with
+signal-to-noise ratio = <code>cts_per_s/e_cts_per_s &gt; 3.0</code>. Points with a
+signal-to-noise ratio below 3, including all negative fluxes, are
+converted to magnitude upper limits with the formula
+<code>-2.5log10(3*e_cts_per_s) + 20.44</code>. Negative fluxes are due to either
+an overestimated background or statistical noise that fluctuates
+below the background level. Upper limits are marked in the light curve
+files by setting the magnitude uncertainty to <code>99.9</code>.</p>
+<p>For low backgrounds, a typical 3-sigma limiting magnitude is about
+19.6 in 30 minutes (secotrs 1--26), 19.0 in 10 minutes (sectors
+27--55), and 18.4 in 200 seconds (sector 56 and later).</p>
+<h2>Background Model</h2>
+<p>The main systematic error in these light curves are caused by
+time-variable scattered light from the Earth and Moon when they are
+above the TESS sunshade. In the worst cases, the sky background is
+brighter than 14th TESS magnitude per pixel, while the early time
+transient light curves are often fainter than 19–21st magnitude. When
+the background is this high, the background corrections must have a
+relative uncertainty less than 0.1% to isolate the transient signal. In
+practice, we have found that strong glints with high-frequency spatial
+features are the most difficult systematic error to remove.</p>
+<p>We provide an estimate of residual background errors in the
+photometric aperture in the <code>bkg_model</code> column of the light curve
+files. Subtracting this columns from the <code>cts_per_s</code> light curve, in
+some cases, can improve the light curve.  We show the background model
+as a purple line in the figures for each light curve, and the
+"background-model corrected" light curve (converted to magnitudes) in
+the bottom panel of each figure.</p>
+<p>To produce the <code>bkg_model</code> column, we filter the subtracted images to
+remove point sources such as the transient and nearby variable
+stars. We used a median filter with a width of 100 pixels, and we
+applied the filter to the subtracted images first column-by-column and
+then row-by-row. We then produced the "background model" light curve
+by rerunning forced photometry on the filtered images at the position
+of the transient. The results of the forced photometry, and its
+uncertainty, are given in the <code>bkg2</code> and <code>e_bkg2</code> columns of the light
+curve files. Finally, we take a running median of the <code>bkg2</code> column to
+reduce the statistical noise to produce the <code>bkg_model</code> columns.</p>
+<p>Further details are in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...956..108F/abstract">Fausnaugh et al. 2023</a>.</p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <ul>
+                            <li><a href="https://faus.science/">Fausnaugh Home</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Modified from theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

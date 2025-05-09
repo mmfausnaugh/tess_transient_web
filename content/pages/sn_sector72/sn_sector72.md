@@ -1,0 +1,80 @@
+title: sector72 supernovae (32 total)
+slug: sector72-supernovae
+status: hidden
+  Each figure has three panels.  The top panel shows the transient light curve, the middle panel shows the local background (estimated in an annulus), and the bottom panel shows a "background-model corrected" light curve. Details about the background model are in the [README]({filename}../README/README.md). 
+ 
+ The vertical red line marks the time of discovery reported to TNS. Other useful metadata from TNS is in the figure title.
+
+ Note that the top and bottom panel are in magnitudes, while the middle panel is in differential flux units. The magnitudes are calibrated to the flux in the reference image used for image subtraction. Thus, flux from the host galaxy is included in these magnitudes. 
+
+  3-sigma upper limits are plotted as triangles with no errorbars. A typical limiting magnitude is 19.6 in 30 minutes or 18.4 in 200 seconds (for low backgrounds).
+
+The links allow you to download the light curve data as a text file. 
+
+More details in the [README]({filename}../README/README.md).
+
+
+[2024ko]({static}../..//light_curves/sector72/lc_2024ko_cleaned)
+![2024ko]({static}../../images/sector72/lc_2024ko_cleaned.png)
+[2023zfs]({static}../..//light_curves/sector72/lc_2023zfs_cleaned)
+![2023zfs]({static}../../images/sector72/lc_2023zfs_cleaned.png)
+[2023xpp]({static}../..//light_curves/sector72/lc_2023xpp_cleaned)
+![2023xpp]({static}../../images/sector72/lc_2023xpp_cleaned.png)
+[2023aase]({static}../..//light_curves/sector72/lc_2023aase_cleaned)
+![2023aase]({static}../../images/sector72/lc_2023aase_cleaned.png)
+[2023xhc]({static}../..//light_curves/sector72/lc_2023xhc_cleaned)
+![2023xhc]({static}../../images/sector72/lc_2023xhc_cleaned.png)
+[2023xip]({static}../..//light_curves/sector72/lc_2023xip_cleaned)
+![2023xip]({static}../../images/sector72/lc_2023xip_cleaned.png)
+[2024hw]({static}../..//light_curves/sector72/lc_2024hw_cleaned)
+![2024hw]({static}../../images/sector72/lc_2024hw_cleaned.png)
+[2023zjz]({static}../..//light_curves/sector72/lc_2023zjz_cleaned)
+![2023zjz]({static}../../images/sector72/lc_2023zjz_cleaned.png)
+[2023acfg]({static}../..//light_curves/sector72/lc_2023acfg_cleaned)
+![2023acfg]({static}../../images/sector72/lc_2023acfg_cleaned.png)
+[2023zvn]({static}../..//light_curves/sector72/lc_2023zvn_cleaned)
+![2023zvn]({static}../../images/sector72/lc_2023zvn_cleaned.png)
+[2023aalo]({static}../..//light_curves/sector72/lc_2023aalo_cleaned)
+![2023aalo]({static}../../images/sector72/lc_2023aalo_cleaned.png)
+[2023zwx]({static}../..//light_curves/sector72/lc_2023zwx_cleaned)
+![2023zwx]({static}../../images/sector72/lc_2023zwx_cleaned.png)
+[2023zon]({static}../..//light_curves/sector72/lc_2023zon_cleaned)
+![2023zon]({static}../../images/sector72/lc_2023zon_cleaned.png)
+[2023achj]({static}../..//light_curves/sector72/lc_2023achj_cleaned)
+![2023achj]({static}../../images/sector72/lc_2023achj_cleaned.png)
+[2023zwv]({static}../..//light_curves/sector72/lc_2023zwv_cleaned)
+![2023zwv]({static}../../images/sector72/lc_2023zwv_cleaned.png)
+[2023znl]({static}../..//light_curves/sector72/lc_2023znl_cleaned)
+![2023znl]({static}../../images/sector72/lc_2023znl_cleaned.png)
+[2023abqf]({static}../..//light_curves/sector72/lc_2023abqf_cleaned)
+![2023abqf]({static}../../images/sector72/lc_2023abqf_cleaned.png)
+[2023aald]({static}../..//light_curves/sector72/lc_2023aald_cleaned)
+![2023aald]({static}../../images/sector72/lc_2023aald_cleaned.png)
+[2024pi]({static}../..//light_curves/sector72/lc_2024pi_cleaned)
+![2024pi]({static}../../images/sector72/lc_2024pi_cleaned.png)
+[2023zmx]({static}../..//light_curves/sector72/lc_2023zmx_cleaned)
+![2023zmx]({static}../../images/sector72/lc_2023zmx_cleaned.png)
+[2023xrz]({static}../..//light_curves/sector72/lc_2023xrz_cleaned)
+![2023xrz]({static}../../images/sector72/lc_2023xrz_cleaned.png)
+[2023zdy]({static}../..//light_curves/sector72/lc_2023zdy_cleaned)
+![2023zdy]({static}../../images/sector72/lc_2023zdy_cleaned.png)
+[2024mq]({static}../..//light_curves/sector72/lc_2024mq_cleaned)
+![2024mq]({static}../../images/sector72/lc_2024mq_cleaned.png)
+[2023xmi]({static}../..//light_curves/sector72/lc_2023xmi_cleaned)
+![2023xmi]({static}../../images/sector72/lc_2023xmi_cleaned.png)
+[2023zut]({static}../..//light_curves/sector72/lc_2023zut_cleaned)
+![2023zut]({static}../../images/sector72/lc_2023zut_cleaned.png)
+[2023zof]({static}../..//light_curves/sector72/lc_2023zof_cleaned)
+![2023zof]({static}../../images/sector72/lc_2023zof_cleaned.png)
+[2023aaaa]({static}../..//light_curves/sector72/lc_2023aaaa_cleaned)
+![2023aaaa]({static}../../images/sector72/lc_2023aaaa_cleaned.png)
+[2023zax]({static}../..//light_curves/sector72/lc_2023zax_cleaned)
+![2023zax]({static}../../images/sector72/lc_2023zax_cleaned.png)
+[2023yyg]({static}../..//light_curves/sector72/lc_2023yyg_cleaned)
+![2023yyg]({static}../../images/sector72/lc_2023yyg_cleaned.png)
+[2024ev]({static}../..//light_curves/sector72/lc_2024ev_cleaned)
+![2024ev]({static}../../images/sector72/lc_2024ev_cleaned.png)
+[2023ybe]({static}../..//light_curves/sector72/lc_2023ybe_cleaned)
+![2023ybe]({static}../../images/sector72/lc_2023ybe_cleaned.png)
+[2023zno]({static}../..//light_curves/sector72/lc_2023zno_cleaned)
+![2023zno]({static}../../images/sector72/lc_2023zno_cleaned.png)

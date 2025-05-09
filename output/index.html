@@ -15,23 +15,54 @@
                 <h1><a href="./">TessTransients </a></h1>
                 <nav><ul>
     
-                        <li><a href="./pages/all-astrophysical-transients.html">All Astrophysical Transients  (2439 total)</a></li>
+                        <li><a href="./pages/all-astrophysical-transients.html">All Astrophysical Transients  (9697 total)</a></li>
     
-                        <li><a href="./pages/supernovae.html">Supernovae (264 total)</a></li>
+                        <li><a href="./pages/supernovae.html">Supernovae (1229 total)</a></li>
+    
+                        <li><a href="./pages/readme.html">README</a></li>
+    
+                        <li><a href="./pages/lc-bulk.html">Bulk Downloads</a></li>
+    
+                        <li><a href="./pages/transient-table.html">Transient Table</a></li>
                 </ul>
                 </nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
-  <p>Easy way to visualize all of the transients observed by TESS.  </p>
+  <p>This webpage hosts TESS light curve data for transients reported to the Transient Name Server (<a href="https://www.wis-tns.org/">wis-tns.org</a>) that were also observed in TESS full frame images. </p>
 
-  <p>For now, it is organized by sector.  Only transients observed while TESS was observing are presented.  A subset of confirmed supernovae per sector is also available.</p>
-        <li><a href="./pages/supernovae.html">Supernovae (264 total)</a></li>
-        <li><a href="./pages/all-astrophysical-transients.html">All Astrophysical Transients  (2439 total)</a></li>
+  <p>We plan to update the data every 7 days, using the <a href="https://archive.stsci.edu/hlsp/tica"  </a> TICA High Level Science products on MAST</a>.   </p>
+
+<!---  <p>The light curves are organized by TESS observing sector. On each sector page, there are figures showing the TESS light curves for each transient, as well as a link to the underlying data.  </p> --->
+
+  <p>All transients observed in a given sector are shown on a single page. To find a specific transient, you need to know which sector it was observed in. You can use a tool like <a href="https://github.com/christopherburke/tess-point"> tess-point</a> to find which sector a given transient was observed in based on its RA and Dec.</p>
+
+    <p>  There is also an API to download individual light curves, for example <code>wget https://tess.mit.edu/public/tesstransients/light_curves/lc_2022sfe_cleaned</code>. In this case, you only need to know the IAU designation of the transient (replace "2022sfe" with the IAU designation). For bulk downloads, the latest data is available on the the Bulk Downloads
+page. However, you may prefer to
+access the data, which is under version contol, through <a href="https://github.com/mmfausnaugh/lc_bulk"> this github
+repo</a>.</p>
+
+
+  <p> These light curves are processed automatically and we do not check their quality. In our experience, the data are reliable when the background/scattered light levels are low.  However, there are very large systematic errors during periods of strong scattered light. Blended signals from variable stars and asteroids are also common. Please contact Michael Fausnaugh (michael.fausnaugh@ttu.edu) for questions about the pipeline or individual light curves. </p>
+
+    <p> Only transients discovered  while TESS was observing are presented here. A subset of confirmed supernovae per sector is also available.</p>
+
+  <p> The full README contains useful information about downloading
+  data, format of the light cure files, and various caveats and
+  helpful tips. </a></p>
+
+
+<p> Please cite <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908...51F/abstract"> Fausnaugh et al. 2021 </a> or <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...956..108F/abstract"> Fausnaugh et al. 2023 </a> if you use these data.  </p>
+
+        <li><a href="./pages/all-astrophysical-transients.html">All Astrophysical Transients  (9697 total)</a></li>
+        <li><a href="./pages/supernovae.html">Supernovae (1229 total)</a></li>
+        <li><a href="./pages/readme.html">README</a></li>
+        <li><a href="./pages/lc-bulk.html">Bulk Downloads</a></li>
+        <li><a href="./pages/transient-table.html">Transient Table</a></li>
 </section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <ul>
-                            <li><a href="https://space.mit.edu/home/faus/">Fausnaugh Home</a></li>
+                            <li><a href="https://faus.science/">Fausnaugh Home</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
         </section><!-- /#extras -->

@@ -7,6 +7,7 @@ SITENAME = u'TessTransients'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS= ['images','light_curves','lc_bulk']
 
 TIMEZONE = 'America/New_York'
 
@@ -20,7 +21,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Fausnaugh Home','https://space.mit.edu/home/faus/'),
+LINKS = (('Fausnaugh Home','https://faus.science/'),
 #         ('Pelican', 'http://getpelican.com/'),
 #         ('Python.org', 'http://python.org/'),
 #         ('Jinja2', 'http://jinja.pocoo.org/'),
@@ -34,3 +35,5 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+PAGE_ORDER_BY = 'pageorder'
+PAGES_SORT_ATTRIBUTE = 'pageorder'
