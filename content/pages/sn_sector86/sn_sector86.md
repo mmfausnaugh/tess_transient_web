@@ -1,4 +1,4 @@
-title: sector86 supernovae (11 total)
+title: sector86 supernovae (15 total)
 slug: sector86-supernovae
 status: hidden
   Each figure has three panels.  The top panel shows the transient light curve, the middle panel shows the local background (estimated in an annulus), and the bottom panel shows a "background-model corrected" light curve. Details about the background model are in the [README]({filename}../README/README.md). 
@@ -22,6 +22,8 @@ More details in the [README]({filename}../README/README.md).
 ![2024aevx]({static}../../images/sector86/lc_2024aevx_cleaned.png)
 [2025kq]({static}../..//light_curves/sector86/lc_2025kq_cleaned)
 ![2025kq]({static}../../images/sector86/lc_2025kq_cleaned.png)
+[2025kt]({static}../..//light_curves/sector86/lc_2025kt_cleaned)
+![2025kt]({static}../../images/sector86/lc_2025kt_cleaned.png)
 [2024afnr]({static}../..//light_curves/sector86/lc_2024afnr_cleaned)
 ![2024afnr]({static}../../images/sector86/lc_2024afnr_cleaned.png)
 [2024acdx]({static}../..//light_curves/sector86/lc_2024acdx_cleaned)
@@ -32,7 +34,13 @@ More details in the [README]({filename}../README/README.md).
 ![2024adih]({static}../../images/sector86/lc_2024adih_cleaned.png)
 [2024acfz]({static}../..//light_curves/sector86/lc_2024acfz_cleaned)
 ![2024acfz]({static}../../images/sector86/lc_2024acfz_cleaned.png)
+[2024agod]({static}../..//light_curves/sector86/lc_2024agod_cleaned)
+![2024agod]({static}../../images/sector86/lc_2024agod_cleaned.png)
 [2025dr]({static}../..//light_curves/sector86/lc_2025dr_cleaned)
 ![2025dr]({static}../../images/sector86/lc_2025dr_cleaned.png)
+[2024aeey]({static}../..//light_curves/sector86/lc_2024aeey_cleaned)
+![2024aeey]({static}../../images/sector86/lc_2024aeey_cleaned.png)
+[2025oa]({static}../..//light_curves/sector86/lc_2025oa_cleaned)
+![2025oa]({static}../../images/sector86/lc_2025oa_cleaned.png)
 [2024afns]({static}../..//light_curves/sector86/lc_2024afns_cleaned)
 ![2024afns]({static}../../images/sector86/lc_2024afns_cleaned.png)

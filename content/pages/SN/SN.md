@@ -1,4 +1,4 @@
-title: Supernovae (1229 total)
+title: Supernovae (1299 total)
 Slug: supernovae
 pageorder: 2
  
@@ -11,11 +11,11 @@ Click on the sector you are interested in to see the transients that TESS observ
 |[SN sector85]({filename}../sn_sector85/sn_sector85.md)| |
 |[SN sector86]({filename}../sn_sector86/sn_sector86.md)| |
 |[SN sector87]({filename}../sn_sector87/sn_sector87.md)| |
-|| |
-|| |
-|| |
-|| |
-|| |
+|[SN sector88]({filename}../sn_sector88/sn_sector88.md)| |
+|[SN sector89]({filename}../sn_sector89/sn_sector89.md)| |
+|[SN sector90]({filename}../sn_sector90/sn_sector90.md)| |
+|[SN sector91]({filename}../sn_sector91/sn_sector91.md)| |
+|[SN sector92]({filename}../sn_sector92/sn_sector92.md)| |
 || |
 || |
 || |

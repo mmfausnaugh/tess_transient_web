@@ -1,4 +1,4 @@
-title: All Astrophysical Transients  (9697 total)
+title: All Astrophysical Transients  (10584 total)
 Slug:all-astrophysical-transients
 pageorder: 1
 
@@ -11,11 +11,11 @@ Click on the sector you are interested in to see the transients that TESS observ
 |[sector85]({filename}../sector85/sector85.md)| |
 |[sector86]({filename}../sector86/sector86.md)| |
 |[sector87]({filename}../sector87/sector87.md)| |
-|| |
-|| |
-|| |
-|| |
-|| |
+|[sector88]({filename}../sector88/sector88.md)| |
+|[sector89]({filename}../sector89/sector89.md)| |
+|[sector90]({filename}../sector90/sector90.md)| |
+|[sector91]({filename}../sector91/sector91.md)| |
+|[sector92]({filename}../sector92/sector92.md)| |
 || |
 || |
 || |
